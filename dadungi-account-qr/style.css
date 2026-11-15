@@ -1,0 +1,39 @@
+:root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;color:#23221d;background:#faf9f5;font-synthesis:none}
+*{box-sizing:border-box}
+body{margin:0;min-width:280px;min-height:100vh;min-height:100svh;background:radial-gradient(ellipse at 50% 0%,#fff5b6 0,transparent 53%),#faf9f5}
+button{font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+button:focus-visible{outline:3px solid #6757c8;outline-offset:4px}
+.app{max-width:430px;margin:auto;padding:calc(30px + env(safe-area-inset-top)) 22px calc(24px + env(safe-area-inset-bottom));text-align:center}
+header{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:24px}
+.brand-mark{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:#fee500;color:#29271b}
+.brand-mark svg{width:25px;height:25px}
+h1{font-size:26px;letter-spacing:-1.2px;line-height:1.35;margin:0;font-weight:800;word-break:keep-all}
+h1 span{white-space:nowrap}
+.qr-card{background:white;border-radius:26px;border:1px solid #eeece3;padding:21px 14px 23px;box-shadow:0 10px 32px #40341108}
+.qr-image{max-width:348px;width:100%;margin:0 auto 18px;padding:14px;background:white}
+.qr-image img{display:block;width:100%;height:auto;object-fit:contain;image-rendering:pixelated}
+.bank{display:inline-block;font-size:24px;font-weight:800;letter-spacing:-.7px;line-height:1.35;background:#fee500;border-radius:12px;padding:10px 25px}
+.scan-note{font-size:15px;color:#7a786c;margin:14px 0 0;letter-spacing:-.3px}
+.install-area{margin-top:24px}
+.install-button,.done-button{display:flex;justify-content:center;align-items:center;gap:10px;width:100%;min-height:54px;border:0;background:#292821;border-radius:15px;color:white;font-size:17px;font-weight:700}
+.install-button:active,.done-button:active{transform:translateY(1px)}
+.install-button svg{width:22px;height:22px}
+.install-note{font-size:13px;color:#77756b;margin:13px 0 0}
+.cache-note{font-size:12px;color:#707566;margin:9px 0 0;min-height:16px}
+[hidden]{display:none!important}
+dialog{width:min(420px,calc(100% - 32px));border:0;border-radius:24px;padding:24px;box-shadow:0 20px 80px #0003;max-height:calc(100dvh - 40px);overflow:auto;color:#24231e}
+dialog::backdrop{background:#22221e80;backdrop-filter:blur(3px)}
+.dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+h2{font-size:21px;letter-spacing:-.6px;margin:0}
+.close{border:0;border-radius:50%;background:#f2f1eb;flex-shrink:0;width:36px;height:36px;line-height:1;color:#555;font-size:28px}
+.help-intro{color:#777369;font-size:14px;line-height:1.6;margin:14px 0 20px}
+.device-help{background:#f8f7f2;border-radius:15px;padding:17px 16px;margin:12px 0}
+.device-help h3{font-size:16px;margin:0 0 10px}
+.device-help ol{padding-left:20px;font-size:14px;line-height:1.7;margin:0}
+.device-help li+li{margin-top:6px}
+.help-small,small{color:#777369;font-size:12px;line-height:1.6}
+.help-small{margin:12px 0 0}
+.done-button{margin-top:20px;min-height:48px}
+@media(max-width:350px){.app{padding-left:16px;padding-right:16px}h1{font-size:23px}.qr-card{padding:15px 10px 20px}.qr-image{padding:9px}.bank{font-size:22px}}
+@media(display-mode:standalone){.install-area{display:none}.app{padding-top:calc(40px + env(safe-area-inset-top))}header{margin-bottom:30px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important}}
